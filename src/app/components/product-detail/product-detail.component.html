@@ -1,0 +1,19 @@
+<div class="thumbnail">
+  <img src="http://placehold.it/320x150">
+  <div class="caption">
+    <!--
+    <h4 class="pull-right">{{ product.price }}</h4>
+    <p>product title: {{ product.title }}</p>
+    <p>{{ product.description }}</p>
+    -->
+    <h4 class="pull-right">{{ productPrice }} </h4>
+    <h4>
+      <p>productId: {{productId}} </p>
+      <router-outlet></router-outlet>
+      <p><a [routerLink]="['./seller', 123234]">Seller</a></p>
+      <!--
+      <p><a [routerLink]="['./seller', {seller.id}]">Seller</a></p>
+      -->
+    </h4>
+  </div>
+</div>
