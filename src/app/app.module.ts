@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { ChatComponent } from './components/chat/chat.component';
 import { SellerComponent } from './components/seller/seller.component';
 import { CartComponent } from './components/cart/cart.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -24,6 +25,7 @@ import { App404Component } from './components/app404/app404.component';
 import { ProductService } from './services/product.service';
 import { LoginGuardService } from './services/login-guard.service';
 import { UnsaveChangesGuardService } from './services/unsave-changes-guard.service';
+import { LanguagesComponent } from './components/languages/languages.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { UnsaveChangesGuardService } from './services/unsave-changes-guard.servi
     ProductsComponent,
     ProductItemComponent,
     ProductDetailComponent,
+    ChatComponent,
     SellerComponent,
     CartComponent,
     SidebarComponent,
@@ -43,6 +46,7 @@ import { UnsaveChangesGuardService } from './services/unsave-changes-guard.servi
     NavbarComponent,
     StarsComponent,
     App404Component,
+    LanguagesComponent,
   ],
   imports: [
     BrowserModule,

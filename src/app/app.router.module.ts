@@ -10,6 +10,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { ChatComponent } from './components/chat/chat.component';
 import { SellerComponent } from './components/seller/seller.component';
 import { SearchComponent } from './components/search/search.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
@@ -34,6 +35,7 @@ export const routes: Routes = [
         data: [{ isProd: true }],
         children: [{ path: 'seller/:id', component: SellerComponent }]
     },
+    { path: 'chat', component: ChatComponent, outlet: "aux" },
     { path: 'cart', component: CartComponent, canDeactivate: [UnsaveChangesGuardService] },
     { path: 'sidebar', component: SidebarComponent },
     { path: 'search', component: SearchComponent },

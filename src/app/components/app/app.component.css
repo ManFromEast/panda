@@ -1,0 +1,16 @@
+.show-main {
+    background: yellowgreen;
+    padding: 15px 0 0 30px ;
+
+    width: 20%;
+    font-size: 24px;
+    float: left;
+    display: block;
+    box-sizing: border-box;
+}
+
+.gborder {
+    border: 1px solid red;
+    background: white;
+    background-clip: padding-box;
+  }
