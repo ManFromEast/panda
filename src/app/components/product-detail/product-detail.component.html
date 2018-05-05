@@ -1,19 +1,31 @@
 <div class="thumbnail">
-  <img src="http://placehold.it/320x150">
-  <div class="caption">
-    <!--
+  <img src="http://placehold.it/820x320">
+  <div>
     <h4 class="pull-right">{{ product.price }}</h4>
-    <p>product title: {{ product.title }}</p>
+    <h4>{{ product.title }}</h4>
     <p>{{ product.description }}</p>
-    -->
-    <h4 class="pull-right">{{ productPrice }} </h4>
-    <h4>
-      <p>productId: {{productId}} </p>
-      <router-outlet></router-outlet>
-      <p><a [routerLink]="['./seller', 123234]">Seller</a></p>
-      <!--
-      <p><a [routerLink]="['./seller', {seller.id}]">Seller</a></p>
-      -->
-    </h4>
+  </div>
+  <div class="ratings">
+    <p class="pull-right">{{ reviews.length }} reviews</p>
+    <p>
+      <app-stars [rating]="product.rating"></app-stars>
+    </p>
   </div>
 </div>
+<!--
+<div class="well" id="reviews-anchor">
+  <div class="row">
+    <div class="col-md-12"></div>
+  </div>
+  <div class="row" *ngFor="let review of reviews">
+    <hr>
+    <div class="col-md-12">
+      <app-stars [rating]="review.rating"></app-stars>
+      <span>{{ review.user }}</span>
+      <span class="pull-right">
+        {{ review.timestamp | date: 'shortDate' }}</span>
+      <p>{{ review.comment }}</p>
+    </div>
+  </div>
+</div>
+-->

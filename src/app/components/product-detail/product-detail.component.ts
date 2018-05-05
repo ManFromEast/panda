@@ -1,6 +1,9 @@
-import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Product } from '../../models/product/product';
+import { Review } from '../../models/product/review';
+import { ProductService } from '../../services/product.service';
+//import { modelGroupProvider } from '@angular/forms';
 
 @Component({
   selector: 'app-product-detail',
@@ -8,17 +11,15 @@ import { Product } from '../../models/product/product';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
-  productId: string;
-  productTitle: string = "MAMA MIA";
-  productPrice: number = 4;
-  isProdEnvironment: boolean;
+  product: Product;
+  //reviews: Review[];
 
-  constructor(private route: ActivatedRoute) {
-    this.productId = route.snapshot.params["id"];
-    this.isProdEnvironment = route.snapshot.data[0]['isProd'];
-    console.log("this.isProdEnvironment = " + this.isProdEnvironment);
+  constructor(route: ActivatedRoute, productService: ProductService) {
+    let productId: number = parseInt(route.snapshot.params["productId"]);
+    this.product = productService.getProductById(productId);
+    //this.reviews = productService.getReviewsForProduct(this.product.id);
   }
-  
+
   ngOnInit() {
   }
 

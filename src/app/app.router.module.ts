@@ -28,6 +28,7 @@ export const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'products', component: ProductsComponent, canActivate: [LoginGuardService] },
+    { path: 'products/:productId', component: ProductDetailComponent },
     { path: 'product-item', component: ProductItemComponent },
     {
         path: 'product/:id',

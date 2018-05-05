@@ -1,0 +1,56 @@
+[{
+        id: 1,
+        title: "Americao",
+        description: "Americao Caffee",
+        price: 2,
+        bid: 2,
+        imgUrl: "assets/xxx.png"
+      },
+      {
+        id: 2,
+        title: "Americao",
+        description: "Americao Caffee",
+        price: 20,
+        bid: 20,
+        imgUrl: "assets/xxx.png"
+      },
+      {
+        id: 3,
+        title: "Americao",
+        description: "Americao Caffee",
+        price: 30,
+        bid: 3,
+        imgUrl: "assets/xxx.png"
+      },
+      {
+        id: 4,
+        title: "Americao",
+        description: "Americao Caffee",
+        price: 40,
+        bid: 40,
+        imgUrl: "assets/xxx.png"
+      },
+      {
+        id: 5,
+        title: "Americao",
+        description: "Americao Caffee",
+        price: 50,
+        bid: 50,
+        imgUrl: "assets/xxx.png"
+      },
+      {
+        id: 6,
+        title: "Americao",
+        description: "Americao Caffee",
+        price: 60,
+        bid: 60,
+        imgUrl: "assets/xxx.png"
+      },
+      {
+        id: 7,
+        title: "Americao",
+        description: "Americao Caffee",
+        price: 70,
+        bid: 70,
+        imgUrl: "assets/xxx.png"
+      }]
